@@ -5,6 +5,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
     padding: 0;
     margin: 0;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }a{
 	text-decoration:none;
 }
@@ -251,4 +252,100 @@ p{
 .content{
 	position:relative;
 	z-index:10;
+	width: 100%;
+	height: 100%;
 }
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 70px;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+h3{
+		font-size: 28px;
+		color: #fff;
+	}
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(../images/back1.jpg);
+		
+	}
+	#section2{
+		background-image: url(imgs/bg3.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/bg4.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
+
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(imgs/bg2.jpg);
+		padding: 6% 0 0 0;
+	}
+	#slide2{
+		background-image: url(imgs/bg5.jpg);
+		padding: 6% 0 0 0;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+	.wrapper{
+		width:980px;
+		margin:0 auto;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.block{
+		width:500px;
+		color: #B6B6B6;
+		margin:0 auto;
+		border:1px solid #888;
+		padding: 25px;
+		margin-top: 100px;
+		font-size: 18px;
+	}
+.content:before{
+	content: "";
+  display: inline-block;
+  min-height: inherit;
+  height: 100%;
+  vertical-align: middle;
+}
+	.underline{
+		width: 25%;
+		border-bottom: 2px solid #022CE5;
+		margin:10px auto;
+	}
