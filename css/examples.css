@@ -38,6 +38,7 @@ h1,h2,h3,h4,h5,h6 {
     padding:0;
     color:#444;
 }
+
 q:before,q:after {
     content:'';
 }
@@ -261,6 +262,12 @@ p{
 	h1{
 		font-size: 70px;
 		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	h2{
+		font-size: 45px;
+		color: #00;
 		margin:0;
 		padding:0;
 	}
