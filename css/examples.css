@@ -412,6 +412,7 @@ h3{
 		-webkit-transform: skew(-15deg);
 		-moz-transform: skew(-15deg);
 		-o-transform: skew(-15deg);
+		transform: skew(-15deg);
 	}
 
 	.name{
@@ -455,4 +456,5 @@ h3{
 		-webkit-transform: skew(-15deg);
 		-moz-transform: skew(-15deg);
 		-o-transform: skew(-15deg);
+		transform: skew(-15deg);
 	}
