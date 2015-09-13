@@ -20,7 +20,38 @@
 	<![endif]-->
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tn3lite.min.js"></script>
 
+<!--  initialize the TN3 when the DOM is ready -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		//Thumbnailer.config.shaderOpacity = 1;
+		var tn1 = $('.mygallery').tn3({
+skinDir:"skins",
+imageClick:"fullscreen",
+image:{
+maxZoom:1.5,
+crop:true,
+clickEvent:"dblclick",
+transitions:[{
+type:"blinds"
+},{
+type:"grid"
+},{
+type:"grid",
+duration:460,
+easing:"easeInQuad",
+gridX:1,
+gridY:8,
+// flat, diagonal, circle, random
+sort:"random",
+sortReverse:false,
+diagonalStart:"bl"
+}]
+}
+		});
+	});
+</script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/examples.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
@@ -46,6 +77,10 @@
 			});
 		});
 	</script>
+<link type="text/css" rel="stylesheet" href="css/tn3.css"></link>
+<!-- include jQuery library 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>-->
+<!-- include tn3 plugin -->
 
 </head>
 <body>
@@ -55,10 +90,6 @@
 		<div class="paral">
 			<div class="info"></div>
 			<div class="num"><a target="_blank" href="https://vk.com/public101929864"><img src="images/vk.png" alt=""></a></div>
-		</div>
-		<div class="paral">
-			<div class="info"></div>
-			<div class="num"><a target="_blank" href="https://vk.com/public101929864"><img src="images/fb.png" alt=""></a></div>
 		</div>
 		</div>
 		<div class="blur"></div>
@@ -87,7 +118,7 @@
 							<div class="img_wrap"><img src="images/player1.png" alt=""></div>
 							<div class="paral">
 							<div class="info"><div class="info_inner"></div></div><div class="name">Поцыбенко Валентин</div>
-						<div class="num">25</div></div></li>
+						<div class="num">9</div></div></li>
 						<li>
 							<div class="img_wrap"><img src="images/player2.png" alt=""></div>
 							<div class="paral">
@@ -102,7 +133,7 @@
 							<div class="img_wrap"><img src="images/player1.png" alt=""></div>
 							<div class="paral">
 							<div class="info"><div class="info_inner"></div></div><div class="name">Поцыбенко Валентин</div>
-						<div class="num">!!!!!</div></div></li>
+						<div class="num">9</div></div></li>
 						<li>
 							<div class="img_wrap"><img src="images/player2.png" alt=""></div>
 							<div class="paral">
@@ -128,11 +159,8 @@
 				<div class="block">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 					<ol class="matches">
-						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+						<li>Летний чемпионат 5х5 Гребного канала 2015</li>
+						<li>Cоревнования «Золотая Осень наших побед «Макс Моторс» по мини-футболу 5х5 Ростова-на-Дону и Ростовской области</li>
 					</ol>
 				</div>
 	</div>
@@ -142,22 +170,75 @@
 	    	<div class="content">
 		<div class="wrapper">
 				<h2>Галерея</h2>
-				<ul class="galery">
-					<li><a href="images/gal1.jpg"><img src="images/gal1.jpg" alt=""></a></li>
-					<li><a href="images/gal2.jpg"><img src="images/gal2.jpg" alt=""></a></li>
-					<li><a href="images/gal3.jpg"><img src="images/gal3.jpg" alt=""></a></li>
-					<li><a href="images/gal4.jpg"><img src="images/gal4.jpg" alt=""></a></li>
-					<li><a href="images/gal5.jpg"><img src="images/gal5.jpg" alt=""></a></li>
-					<li><a href="images/gal6.jpg"><img src="images/gal6.jpg" alt=""></a></li>
-					<li><a href="images/gal7.jpg"><img src="images/gal7.jpg" alt=""></a></li>
-					<li><a href="images/gal8.jpg"><img src="images/gal8.jpg" alt=""></a></li>
-					<li><a href="images/gal9.jpg"><img src="images/gal9.jpg" alt=""></a></li>
-					<li><a href="images/gal10.jpg"><img src="images/gal10.jpg" alt=""></a></li>
-					<li><a href="images/gal11.jpg"><img src="images/gal11.jpg" alt=""></a></li>
-					<li><a href="images/gal12.jpg"><img src="images/gal12.jpg" alt=""></a></li>
-				</ul>
-		</div></div>
-	    
+				<div id="content">
+    <div class="mygallery">
+	<div class="tn3 album">
+	    <ol>
+		<li>
+		    <a href="images/gal1.jpg">
+			<img src="images/gal1.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <a href="images/gal2.jpg">
+			<img src="images/gal2.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <a href="images/gal3.jpg">
+			<img src="images/gal3.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <a href="images/gal4.jpg">
+			<img src="images/gal4.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <a href="images/gal5.jpg">
+			<img src="images/gal5.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <a href="images/gal6.jpg">
+			<img src="images/gal6.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <a href="images/gal7.jpg">
+			<img src="images/gal7.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <a href="images/gal8.jpg">
+			<img src="images/gal8.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <a href="images/gal9.jpg">
+			<img src="images/gal9.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <a href="images/gal10.jpg">
+			<img src="images/gal10.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <a href="images/gal11.jpg">
+			<img src="images/gal11.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <a href="images/gal12.jpg">
+			<img src="images/gal12.jpg" />
+		    </a>
+		</li>
+	    </ol>
+	</div>
+    </div>
+</div>
+	   </div></div>
 </div>
 	<div class="section" id="section2">
 		<div class="wrapper">
@@ -172,15 +253,11 @@
 						<h4>Капитан команды Поцыбенко Валентин</h4>
 						<dl class="phone">
 							<dt>Телефон:</dt>
-							<dd><a href="tel:">98881231234</a></dd>
+							<dd><a href="tel:89508422251">89508422251</a></dd>
 						</dl>
 						<dl class="email">
 							<dt>E-mail:</dt>
-							<dd><a href="mailto:">alph@gmail.com</a></dd>
-						</dl>
-						<dl class="skype">
-							<dt>Skype:</dt>
-							<dd><a href="skype:">alphard</a></dd>
+							<dd><a href="mailto:spotknylas@yandex.ru">spotknylas@yandex.ru</a></dd>
 						</dl>
 						<h4>Спонсор - компания Alphard</h4>
 						<dl class="email clearfix">
@@ -191,10 +268,6 @@
 							<div class="paral">
 								<div class="info"></div>
 								<div class="num"><a target="_blank" href="https://vk.com/public101929864"><img src="images/vk.png" alt=""></a></div>
-							</div>
-							<div class="paral">
-								<div class="info"></div>
-								<div class="num"><a target="_blank" href="https://vk.com/public101929864"><img src="images/fb.png" alt=""></a></div>
 							</div>
 						</div>
 					</div>

@@ -563,8 +563,8 @@ h3{
 		position: absolute;
 	}
 	.social .paral{
-		float:left;
-		margin-left:10px;
+		width: 63px;
+		margin: 0 auto;
 		position: relative;
 		margin-top: 15px;
 	}
@@ -603,7 +603,7 @@ h3{
 	.alf_a{
 		/* color: #515151; */
 		/* font-size: 24px; */
-		margin-top: 5px;
+		margin-top: 7px;
 		display: inline-block;
 	}
 
@@ -688,13 +688,14 @@ h3{
 
 .alf_img{
 	    width: 173px;
-    float: left;
-    margin-right: 15px;
+	    float: left;
+	    margin: 5px 0;
+	    margin-right: 15px;
 }
 
 .matches{
 	margin:10px;
-
+	text-align: left;
 }
 
 .matches li{
@@ -702,21 +703,21 @@ h3{
 }
 
 ol {
-    counter-reset:li; /* Ð˜Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð¸Ñ€ÑƒÐµÐ¼ ÑÑ‡ÐµÑ‚Ñ‡Ð¸Ðº */
-    padding:0; /* Ð£Ð´Ð°Ð»ÑÐµÐ¼  ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð½Ð¾Ðµ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ Ð»ÐµÐ²Ð¾Ðµ Ð¿Ð¾Ð»Ðµ*/
-    list-style:none; /* ÐžÑ‚Ð¼ÐµÐ½ÑÐµÐ¼ Ð½ÑƒÐ¼ÐµÑ€Ð°Ñ†Ð¸ÑŽ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð½ÑƒÑŽ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ */
-}
+    counter-reset:li; 
+    padding:0; 
+    list-style:none; 
+    }
 ol li {
-    position:relative;/* Ð¡Ð¾Ð·Ð´Ð°ÐµÐ¼ ÐºÐ¾Ð½Ñ‚ÐµÐºÑÑ‚ Ð´Ð»Ñ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² */
-    margin: 0 0 6px 3em;/* Ð”Ð°ÐµÐ¼ ÐºÐ°Ð¶Ð´Ð¾Ð¼Ñƒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñƒ ÑÐ¿Ð¸ÑÐºÐ° Ð¾Ñ‚ÑÑ‚ÑƒÐ¿ ÑÐ»ÐµÐ²Ð°, Ñ‡Ñ‚Ð¾ Ð±Ñ‹ Ð¾ÑÐ²Ð¾Ð±Ð¾Ð´Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÑÑ‚Ð²Ð¾ Ð´Ð»Ñ Ð½ÑƒÐ¼ÐµÑ€Ð°Ñ†Ð¸Ð¸ */
-    padding:4px 8px;
+    position:relative;
+    margin: 0 0 6px 3em;
+     padding:4px 8px;
 }
 ol li:before {
-    content:counter(li);/* Ð’ ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÐ¼ ÑÑ‡ÐµÑ‚Ñ‡Ð¸Ðº */
-    counter-increment:li;/* Ð£Ð²ÐµÐ»Ð¸Ñ‡Ð¸Ð²Ð°ÐµÐ¼ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ ÑÑ‡ÐµÑ‚Ñ‡Ð¸ÐºÐ° Ð½Ð° 1 *//* ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ð¾Ð½Ð¸Ñ€ÑƒÐµÐ¼ Ð¸ ÑÑ‚Ð¸Ð»Ð¸Ð·Ð¸Ñ€ÑƒÐµÐ¼ Ñ†Ð¸Ñ„Ñ€Ñ‹ */
+    content:counter(li);
+    counter-increment:li;
     position:absolute;
-    top:-2px;
-    left: -1.4em;
+    top: -1px;
+    left: -2em;
     line-height: 20px;
     width: 28px;
     padding: 4px 0;
