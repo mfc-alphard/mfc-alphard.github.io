@@ -500,6 +500,8 @@ h3{
 		right:7px;
 		bottom: 14px;
 		z-index: 2;
+		width: 23px;
+		text-align: center;
 		color: #fff;
 		font-size: 22px;
 		margin-left: 5%;
